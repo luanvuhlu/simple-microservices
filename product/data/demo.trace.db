@@ -1,0 +1,9 @@
+2021-03-05 00:01:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PRODUCT( ID INT NOT NULL, NAME VARCHAR(250) NOT NULL, CATEGORY_ID INT DEFAULT NULL, CREATED_TIME DATE DEFAULT NULL, UPDATED_TIME DATE DEFAULT NULL, PRIMARY([*]ID) )"; expected "KEY"; SQL statement:
+CREATE table product( id int NOT NULL, name VARCHAR(250) NOT NULL, category_id int DEFAULT NULL, created_time DATE DEFAULT NULL, updated_time DATE DEFAULT NULL, PRIMARY(id) ) [42001-200]
+2021-03-05 00:14:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+select product0_.id as id1_1_0_, category1_.id as id1_0_1_, product0_.category_id as category5_1_0_, product0_.created_time as created_2_1_0_, product0_.name as name3_1_0_, product0_.updated_time as updated_4_1_0_, category1_.created_time as created_2_0_1_, category1_.name as name3_0_1_, category1_.updated_time as updated_4_0_1_ from product product0_ left outer join category category1_ on product0_.category_id=category1_.id where product0_.category_id=? [42102-200]
+2021-03-05 00:14:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CATEGORY" not found; SQL statement:
+select product0_.id as id1_1_0_, category1_.id as id1_0_1_, product0_.category_id as category5_1_0_, product0_.created_time as created_2_1_0_, product0_.name as name3_1_0_, product0_.updated_time as updated_4_1_0_, category1_.created_time as created_2_0_1_, category1_.name as name3_0_1_, category1_.updated_time as updated_4_0_1_ from product product0_ left outer join category category1_ on product0_.category_id=category1_.id where product0_.category_id=? [42102-200]
